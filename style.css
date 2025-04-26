@@ -133,6 +133,114 @@ body {
         background-position: 0% 50%;
     }
 }
+/* LinkedIn Button Styles */
+.linkedin-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: #0077b5; /* LinkedIn blue color */
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.linkedin-btn:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.linkedin-btn:active {
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--white);
+}
+
+.linkedin-text {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Pulse animation for the LinkedIn button */
+.linkedin-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: -1;
+    opacity: 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .linkedin-btn {
+        bottom: 30px;
+        padding: 8px 16px;
+    }
+    
+    .linkedin-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .linkedin-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .linkedin-btn {
+        bottom: 20px;
+    }
+}
+
+/* For very small screens, make sure it doesn't overlap with other elements */
+@media (max-height: 500px) {
+    .linkedin-btn {
+        bottom: 15px;
+    }
+}
 
 /* Stars effect */
 .stars {
