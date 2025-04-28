@@ -8,496 +8,595 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./images/icon.jpeg" alt="NUFS Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#values">Values</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#locations">Locations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icon.jpeg" alt="NUFS Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#values">Values</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#locations">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
- 
-    
-    <!-- Hero Section with LinkedIn Logo -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="./images/logo.jpeg" alt="About Image" class="centered-image">
-            <h1 class="hero-title">
-                <span class="typing-text" id="typing-text"></span>
-                <span class="cursor">...</span>
-            </h1>
-        </div>
-        <div class="shapes-container"></div>
+        </nav>
+
+        <!-- Hero Section with LinkedIn Logo -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="./images/logo.jpeg" alt="About Image" class="centered-image">
+                <h1 class="hero-title">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">...</span>
+                </h1>
+            </div>
+            <div class="shapes-container"></div>
+            <div class="social-buttons-container">
+                <!-- LinkedIn Button -->
+                <a target="_blank" href="https://www.linkedin.com/company/nufsmakingithappen/" class="social-btn linkedin-btn" aria-label="Visit our LinkedIn profile">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                        </svg>
+                    </div>
+                    <span class="social-text">Connect With Us</span>
+                </a>
+                
+                <!-- Instagram Button -->
+                <a target="_blank" href="https://www.instagram.com/numero_uno_financial_solutions?utm_source=qr" class="social-btn instagram-btn" aria-label="Follow us on Instagram">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>
+                    </div>
+                    <span class="social-text">Follow Us</span>
+                </a>
+                
+                <!-- Contact Us Button -->
+                <a href="#contact" class="social-btn contact-btn" aria-label="Contact us">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/>
+                        </svg>
+                    </div>
+                    <span class="social-text">Contact Us</span>
+                </a>
+            </div>
+        </section>
         
-        <!-- LinkedIn Button -->
-        <a target="_blank" href="https://www.linkedin.com/company/nufsmakingithappen/" class="linkedin-btn" aria-label="Visit our LinkedIn profile">
-            <div class="linkedin-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <!-- LinkedIn icon from Font Awesome -->
-                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+        <!-- about section -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <!-- Header with integrated leadership -->
+                <div class="about-header">
+                    <div class="header-content">
+                        <h2 class="section-title">Who We Are</h2>
+                        <div class="heading-underline"></div>
+                    </div>
+                </div>
+        
+                <!-- New integrated CEO and content layout -->
+                <div class="ceo-profile-container">
+                    <div class="row align-items-center animate-bottom">
+                        <!-- Left side: CEO profile -->
+                        <div class="col-lg-5 mb-4 mb-lg-0">
+                            <div class="ceo-card">
+                                <div class="ceo-image-container">
+                                    <img src="./images/user.png" alt="CEO" class="ceo-img">
+                                    <div class="ceo-badge">CEO & Co-Founder</div>
+                                </div>
+                                <div class="ceo-details">
+                                    <h3 class="ceo-name">Prajesh Sharma</h3>
+                                    <div class="tagline-container">
+                                        <p class="ceo-tagline">"Smart work can take you some distance towards your goal but HARD WORK... WORKS!!!"</p>
+                                    </div>
+                                    <div class="social-links">
+                                        <a target="_blank" href="https://www.linkedin.com/in/prajesh-sharma-6016296/" class="social-icon linkedin" aria-label="LinkedIn">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right side: Company description -->
+                        <div class="col-lg-7">
+                            <div class="company-description">
+                                <p>We as a Banking service provider are evolving rapidly to meet the demands of a dynamic economy. We provide critical support to businesses by ensuring that receivables are effectively managed and recovered. By combining professionalism, regulatory compliance and innovative technology, we help our clients maintain financial stability while preserving valuable customer relationships.</p>
+                                
+                                <p>Our aim is to be "A Preferred Partner" for Our Clients by assuring Complete Satisfaction – <span class="highlight-text">"Your Brand. Our People. One Powerful Connection."</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Key attributes section -->
+                <div class="attributes-section">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4 animate-left">
+                            <div class="attribute-box">
+                                <div class="attribute-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Security and Trust</h4>
+                                <p>We are committed to safeguarding sensitive client information with strong regulatory compliance and robust fraud prevention.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3 mb-4 animate-left">
+                            <div class="attribute-box">
+                                <div class="attribute-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h4>Professionalism</h4>
+                                <p>Trained professionals who use tactful communication to protect the reputation of client businesses.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3 mb-4 animate-right">
+                            <div class="attribute-box">
+                                <div class="attribute-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h4>Innovation</h4>
+                                <p>We utilize advanced analytics and digital channels to improve recovery rates with tailored strategies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-3 mb-4 animate-right">
+                            <div class="attribute-box">
+                                <div class="attribute-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h4>Global Reach</h4>
+                                <p>Operating across borders while understanding regional financial landscapes and regulations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Services teaser -->
+                <div class="services-teaser">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="teaser-content">
+                                <h3>Our Core Services</h3>
+                                <p>From debt recovery to accounts receivable management, we offer comprehensive financial services tailored to your business needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- team image section -->
+        <section class="team-showcase">
+            <div class="container">
+              <h2 class="section-title">Our Amazing Team</h2>
+              <div class="heading-underline"></div>
+              <div class="team-description">
+                <p>Meet the passionate professionals behind our success</p>
+              </div>
+              
+              <div class="team-gallery">
+                <div class="team-image-card animate-left">
+                  <div class="image-wrapper">
+                    <img src="./images/team1.jpeg" alt="Our Team Together" class="team-photo">
+                  </div>
+                  <div class="image-caption">Our Team Celebration</div>
+                </div>
+                
+                <div class="team-image-card animate-right">
+                  <div class="image-wrapper">
+                    <img src="./images/team2.jpeg" alt="Team Collaboration" class="team-photo">
+                  </div>
+                  <div class="image-caption">Working Together</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Values Section -->
+        <section id="values" class="values-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center mb-5">
+                    <h2 class="section-title">Our Core Values</h2>
+                    <div class="heading-underline"></div>
+                </div>
+                
+                <!-- Values Content -->
+                <div class="values-container">
+                    <!-- Value Cards - Explicitly defined order -->
+                    <div class="value-card value-believe animate-left">
+                        <div class="value-content">
+                            <h3>BELIEVE</h3>
+                            <p class="value-description">Believe in self and always remember BASICS.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-card value-respect animate-right">
+                        <div class="value-content">
+                            <h3>RESPECT</h3>
+                            <p class="value-description">One and all in every situation and Act with Integrity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-card value-aspire animate-left">
+                        <div class="value-content">
+                            <h3>ASPIRE</h3>
+                            <p class="value-description">Aim higher, embrace technology and keep DISCIPLINE on top priority.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-card value-teamwork animate-right">
+                        <div class="value-content">
+                            <h3>TEAMWORK</h3>
+                            <p class="value-description">Always standing for each other as ONE FAMILY.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-card value-service animate-bottom">
+                        <div class="value-content">
+                            <h3>SERVICE</h3>
+                            <p class="value-description">Ready to serve.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- location section -->
+        <section id="locations" class="content-section locations-section">
+            <div class="map-bg-container">
+                <svg class="map-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300">
+                <!-- Background -->
+                <rect width="100%" height="100%" fill="transparent"/>
+                
+                <!-- Map Connection Lines -->
+                <g stroke="#dedede" stroke-width="1" opacity="0.3">
+                    <line x1="100" y1="100" x2="300" y2="150" />
+                    <line x1="300" y1="150" x2="500" y2="80" />
+                    <line x1="500" y1="80" x2="700" y2="200" />
+                    <line x1="700" y1="200" x2="900" y2="100" />
+                    
+                    <line x1="100" y1="100" x2="150" y2="300" />
+                    <line x1="300" y1="150" x2="400" y2="350" />
+                    <line x1="500" y1="80" x2="550" y2="250" />
+                    <line x1="700" y1="200" x2="650" y2="400" />
+                    <line x1="900" y1="100" x2="850" y2="300" />
+                    
+                    <line x1="150" y1="300" x2="200" y2="500" />
+                    <line x1="400" y1="350" x2="350" y2="550" />
+                    <line x1="550" y1="250" x2="500" y2="450" />
+                    <line x1="650" y1="400" x2="700" y2="500" />
+                    <line x1="850" y1="300" x2="800" y2="550" />
+                    
+                    <line x1="150" y1="300" x2="400" y2="350" />
+                    <line x1="400" y1="350" x2="550" y2="250" />
+                    <line x1="550" y1="250" x2="650" y2="400" />
+                    <line x1="650" y1="400" x2="850" y2="300" />
+                    
+                    <line x1="200" y1="500" x2="350" y2="550" />
+                    <line x1="350" y1="550" x2="500" y2="450" />
+                    <line x1="500" y1="450" x2="700" y2="500" />
+                    <line x1="700" y1="500" x2="800" y2="550" />
+                    
+                    <!-- Additional connect lines -->
+                    <line x1="100" y1="400" x2="300" y2="450" />
+                    <line x1="250" y1="200" x2="450" y2="300" />
+                    <line x1="750" y1="350" x2="900" y2="400" />
+                    <line x1="200" y1="150" x2="350" y2="100" />
+                    <line x1="600" y1="50" x2="800" y2="150" />
+                    <line x1="100" y1="550" x2="300" y2="500" />
+                    <line x1="600" y1="550" x2="750" y2="500" />
+                </g>
+                
+                <!-- Map Dots - Major Cities -->
+                <g fill="#0056b3" opacity="0.7">
+                    <circle cx="100" cy="100" r="5" />
+                    <circle cx="300" cy="150" r="4" />
+                    <circle cx="500" cy="80" r="6" />
+                    <circle cx="700" cy="200" r="5" />
+                    <circle cx="900" cy="100" r="4" />
+                    
+                    <circle cx="150" cy="300" r="5" />
+                    <circle cx="400" cy="350" r="7" />
+                    <circle cx="550" cy="250" r="6" />
+                    <circle cx="650" cy="400" r="5" />
+                    <circle cx="850" cy="300" r="4" />
+                    
+                    <circle cx="200" cy="500" r="5" />
+                    <circle cx="350" cy="550" r="4" />
+                    <circle cx="500" cy="450" r="6" />
+                    <circle cx="700" cy="500" r="5" />
+                    <circle cx="800" cy="550" r="4" />
+                </g>
+                
+                <!-- Map Dots - Minor Cities -->
+                <g fill="#ff6b81" opacity="0.5">
+                    <circle cx="150" cy="150" r="3" />
+                    <circle cx="250" cy="100" r="2" />
+                    <circle cx="400" cy="120" r="3" />
+                    <circle cx="600" cy="150" r="2" />
+                    <circle cx="800" cy="130" r="3" />
+                    
+                    <circle cx="120" cy="200" r="2" />
+                    <circle cx="250" cy="250" r="3" />
+                    <circle cx="450" cy="200" r="2" />
+                    <circle cx="600" cy="300" r="3" />
+                    <circle cx="750" cy="250" r="2" />
+                    
+                    <circle cx="180" cy="380" r="3" />
+                    <circle cx="300" cy="400" r="2" />
+                    <circle cx="480" cy="380" r="3" />
+                    <circle cx="580" cy="450" r="2" />
+                    <circle cx="750" cy="380" r="3" />
+                    
+                    <circle cx="120" cy="480" r="2" />
+                    <circle cx="280" cy="520" r="3" />
+                    <circle cx="420" cy="480" r="2" />
+                    <circle cx="580" cy="500" r="3" />
+                    <circle cx="750" cy="520" r="2" />
+                </g>
+                
+                <!-- Map Dots - Small Towns -->
+                <g fill="#444444" opacity="0.3">
+                    <circle cx="120" cy="120" r="1" />
+                    <circle cx="220" cy="140" r="1" />
+                    <circle cx="320" cy="100" r="1" />
+                    <circle cx="420" cy="160" r="1" />
+                    <circle cx="520" cy="120" r="1" />
+                    <circle cx="620" cy="180" r="1" />
+                    <circle cx="720" cy="140" r="1" />
+                    <circle cx="820" cy="160" r="1" />
+                    <circle cx="920" cy="120" r="1" />
+                    
+                    <circle cx="130" cy="220" r="1" />
+                    <circle cx="230" cy="200" r="1" />
+                    <circle cx="330" cy="260" r="1" />
+                    <circle cx="430" cy="220" r="1" />
+                    <circle cx="530" cy="180" r="1" />
+                    <circle cx="630" cy="240" r="1" />
+                    <circle cx="730" cy="200" r="1" />
+                    <circle cx="830" cy="260" r="1" />
+                    <circle cx="930" cy="220" r="1" />
+                    
+                    <circle cx="140" cy="320" r="1" />
+                    <circle cx="240" cy="360" r="1" />
+                    <circle cx="340" cy="320" r="1" />
+                    <circle cx="440" cy="280" r="1" />
+                    <circle cx="540" cy="340" r="1" />
+                    <circle cx="640" cy="300" r="1" />
+                    <circle cx="740" cy="360" r="1" />
+                    <circle cx="840" cy="320" r="1" />
+                    <circle cx="940" cy="280" r="1" />
+                    
+                    <circle cx="150" cy="420" r="1" />
+                    <circle cx="250" cy="380" r="1" />
+                    <circle cx="350" cy="440" r="1" />
+                    <circle cx="450" cy="400" r="1" />
+                    <circle cx="550" cy="460" r="1" />
+                    <circle cx="650" cy="420" r="1" />
+                    <circle cx="750" cy="380" r="1" />
+                    <circle cx="850" cy="440" r="1" />
+                    <circle cx="950" cy="400" r="1" />
+                    
+                    <circle cx="160" cy="520" r="1" />
+                    <circle cx="260" cy="480" r="1" />
+                    <circle cx="360" cy="540" r="1" />
+                    <circle cx="460" cy="500" r="1" />
+                    <circle cx="560" cy="560" r="1" />
+                    <circle cx="660" cy="520" r="1" />
+                    <circle cx="760" cy="480" r="1" />
+                    <circle cx="860" cy="540" r="1" />
+                    <circle cx="960" cy="500" r="1" />
+                </g>
                 </svg>
+                <div class="gradient-overlay"></div>
             </div>
-            <span class="linkedin-text">Connect With Us</span>
-        </a>
-    </section>
-    
-    <section id="about" class="content-section">
-        <div class="container">
-            <!-- Heading with decorative elements -->
-            <div class="section-header text-center mb-5">
-                <h2 class="about-heading">About Us</h2>
-                <div class="heading-underline"></div>
+            <div class="container">
+                <!-- Heading with decorative elements -->
+                <div class="section-header text-center mb-3">
+                    <h2 class="section-title">Our Locations</h2>
+                    <div class="heading-underline"></div>
+                </div>
+                
+                <!-- Locations grid container -->
+                <div class="locations-container">
+                    <!-- Location Card 1 -->
+                    <div class="location-card animate-up">
+                        <div class="location-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Vega 8, Swargate</h3>
+                            <p>Numero Uno Financial Solutions<br>
+                            Office No. 8, 4th Floor, A Wing, Vega Centre,<br>
+                            Shankar Shet Road, Swargate, Pune - 411037
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Location Card 2 -->
+                    <div class="location-card animate-up" data-delay="200">
+                        <div class="location-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Vega 7, Swargate</h3>
+                            <p>Numero Uno Financial Solutions<br>
+                            Office No. 7, 4th Floor, A Wing, Vega Centre,<br>
+                            Shankar Shet Road, Swargate, Pune - 411037
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Location Card 3 -->
+                    <div class="location-card animate-up" data-delay="400">
+                        <div class="location-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Andheri, Mumbai</h3>
+                            <p>Numero Uno Financial Solutions<br>
+                            Office No. 307, 3rd Floor, Eco Space,<br>
+                            Mogra Village Lane, Off New Nagardas Road,<br>
+                            Andheri East, Mumbai – 400069
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Location Card 4 -->
+                    <div class="location-card animate-up" data-delay="600">
+                        <div class="location-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Naupada, Thane</h3>
+                            <p>Numero Uno Financial Solutions<br>
+                            404, Bal Ganesh Tower, Dada Patil Wadi,<br>
+                            Naupada, Station Road, Thane West – 400602
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Main content row with improved layout -->
-            <div class="row about-row">
-                <!-- Team members column -->
-                <div class="col-lg-5 col-md-12 mb-4 animate-left">
-                    <div class="team-container">
-                        <!-- Team member 1 -->
-                        <div class="team-card mb-4">
-                            <div class="team-content">
-                                <div class="team-avatar">
-                                    <img src="./images/user.png" alt="Prajesh Sharma" class="user-img">
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section content-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center mb-5">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="heading-underline"></div>
+                </div>
+                
+                <!-- Contact Content -->
+                <div class="row">
+                    <!-- Contact Info Column -->
+                    <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 animate-left">
+                        <div class="contact-info-wrapper">
+                            <!-- Address Card -->
+                            <div class="info-card mb-4">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <div class="team-details">
-                                    <h5>Prajesh Sharma</h5>
-                                    <p>Co focused on strategic planning and operations</p>
+                                <div class="info-content">
+                                    <h5>Our Office</h5>
+                                    <p>Numero Uno Financial Solutions<br>
+                                    Office No. 8, 4th Floor, A Wing, Vega Centre,<br>
+                                    Shankar Shet Road, Swargate, Pune - 411037</p>
+                                </div>
+                            </div>
+
+                            <!-- Email Cards -->
+                            <div class="info-card mb-4">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5>Email Us</h5>
+                                    <p><strong>Business Queries:</strong> admin@nufs.in</p>
+                                    <p><strong>Job Inquiries:</strong> hr@nufs.in</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone Card -->
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5>Call Us</h5>
+                                    <p><strong>Business:</strong> 9607777789</p>
+                                    <p><strong>HR Department:</strong> 9860154238</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Team member 2 -->
-                        <div class="team-card mb-4">
-                            <div class="team-content">
-                                <div class="team-avatar">
-                                    <img src="./images/user.png" alt="Sandeep Sonawane" class="user-img">
-                                </div>
-                                <div class="team-details">
-                                    <h5>Sandeep Sonawane</h5>
-                                    <p>Co focused on strategic planning and operations</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Team member 3 -->
-                        <div class="team-card">
-                            <div class="team-content">
-                                <div class="team-avatar">
-                                    <img src="./images/user.png" alt="Gitesh Torane" class="user-img">
-                                </div>
-                                <div class="team-details">
-                                    <h5>Gitesh Torane</h5>
-                                    <p>Co focused on strategic planning and operations</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                
-                <!-- About content column -->
-                <div class="col-lg-7 col-md-12 animate-right">
-                    <div class="about-content">
-                        <p>A professionally managed company engaged in collections/payment assistance activities. We are looking forward to work with your esteemed organization.</p>
-                        
-                        <p>Our objective is to use Quality Assurance to Service our Current and Future Customers. We believe in developing a Long-term Relationship with our clients.</p>
-                        
-                        <p>Our aim is to be "A Preferred Vendor" for Our Clients by assuring Complete Secrecy for Any Job / Proprietary Work with a sound IT network in place.</p>
-                        
-                        <p>We have a dedicated and hard-working team of professionals with the experience from all fields who are always upgrading themselves with the latest information and market flow. We are capable of adapting ourselves to suit any kind of project within a reasonable timeframe. Our team is always ready to quickly gear up to meet any challenge.</p>
-                        
-                        <p>We believe that strength of professional service depends upon the quality of professional staff. Keeping that in mind we employ a mature team which ensures professional integrity and independence. Our staff is ready to work on various outsourcing assignment offered by various companies and are fully conversant with methods used in these fields.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
 
-    <!-- Values Section -->
-    <section id="values" class="values-section">
-        <div class="container">
-            <!-- Section Header -->
-            <div class="section-header text-center mb-5">
-                <h2 class="values-heading">Our Core Values</h2>
-                <div class="values-underline"></div>
-            </div>
-            
-            <!-- Values Content -->
-            <div class="values-container">
-                <!-- Value Cards - Explicitly defined order -->
-                <div class="value-card value-believe animate-left">
-                    <div class="value-content">
-                        <h3>BELIEVE</h3>
-                        <p class="value-description">Believe in self and always remember BASICS.</p>
-                    </div>
-                </div>
-                
-                <div class="value-card value-respect animate-right">
-                    <div class="value-content">
-                        <h3>RESPECT</h3>
-                        <p class="value-description">One and all in every situation and Act with Integrity.</p>
-                    </div>
-                </div>
-                
-                <div class="value-card value-aspire animate-left">
-                    <div class="value-content">
-                        <h3>ASPIRE</h3>
-                        <p class="value-description">Aim higher, embrace technology and keep DISCIPLINE on top priority.</p>
-                    </div>
-                </div>
-                
-                <div class="value-card value-teamwork animate-right">
-                    <div class="value-content">
-                        <h3>TEAMWORK</h3>
-                        <p class="value-description">Always standing for each other as ONE FAMILY.</p>
-                    </div>
-                </div>
-                
-                <div class="value-card value-service animate-bottom">
-                    <div class="value-content">
-                        <h3>SERVICE</h3>
-                        <p class="value-description">Ready to serve.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Clients Image Slider Section -->
-    <section id="partners" class="image-slider-section">
-        <div class="slider-container">
-            <div class="slider-track">
-                <!-- First set of images (duplicated for infinite effect) -->
-                <div class="slide">
-                    <img src="./images/1.png" alt="Partner 1">
-                </div>
-                <div class="slide">
-                    <img src="./images/2.png" alt="Partner 2">
-                </div>
-                <div class="slide">
-                    <img src="./images/3.png" alt="Partner 3">
-                </div>
-                <div class="slide">
-                    <img src="./images/5.png" alt="Partner 5">
-                </div>
-                <div class="slide">
-                    <img src="./images/6.png" alt="Partner 6">
-                </div>
-                <div class="slide">
-                    <img src="./images/1.png" alt="Partner 1">
-                </div>
-                <div class="slide">
-                    <img src="./images/2.png" alt="Partner 2">
-                </div>
-                <div class="slide">
-                    <img src="./images/3.png" alt="Partner 3">
-                </div>
-                <div class="slide">
-                    <img src="./images/5.png" alt="Partner 4">
-                </div>
-                <div class="slide">
-                    <img src="./images/6.png" alt="Partner 5">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- location section -->
-    <section id="locations" class="content-section locations-section">
-        <div class="map-bg-container">
-            <svg class="map-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300">
-              <!-- Background -->
-              <rect width="100%" height="100%" fill="transparent"/>
-              
-              <!-- Map Connection Lines -->
-              <g stroke="#dedede" stroke-width="1" opacity="0.3">
-                <line x1="100" y1="100" x2="300" y2="150" />
-                <line x1="300" y1="150" x2="500" y2="80" />
-                <line x1="500" y1="80" x2="700" y2="200" />
-                <line x1="700" y1="200" x2="900" y2="100" />
-                
-                <line x1="100" y1="100" x2="150" y2="300" />
-                <line x1="300" y1="150" x2="400" y2="350" />
-                <line x1="500" y1="80" x2="550" y2="250" />
-                <line x1="700" y1="200" x2="650" y2="400" />
-                <line x1="900" y1="100" x2="850" y2="300" />
-                
-                <line x1="150" y1="300" x2="200" y2="500" />
-                <line x1="400" y1="350" x2="350" y2="550" />
-                <line x1="550" y1="250" x2="500" y2="450" />
-                <line x1="650" y1="400" x2="700" y2="500" />
-                <line x1="850" y1="300" x2="800" y2="550" />
-                
-                <line x1="150" y1="300" x2="400" y2="350" />
-                <line x1="400" y1="350" x2="550" y2="250" />
-                <line x1="550" y1="250" x2="650" y2="400" />
-                <line x1="650" y1="400" x2="850" y2="300" />
-                
-                <line x1="200" y1="500" x2="350" y2="550" />
-                <line x1="350" y1="550" x2="500" y2="450" />
-                <line x1="500" y1="450" x2="700" y2="500" />
-                <line x1="700" y1="500" x2="800" y2="550" />
-                
-                <!-- Additional connect lines -->
-                <line x1="100" y1="400" x2="300" y2="450" />
-                <line x1="250" y1="200" x2="450" y2="300" />
-                <line x1="750" y1="350" x2="900" y2="400" />
-                <line x1="200" y1="150" x2="350" y2="100" />
-                <line x1="600" y1="50" x2="800" y2="150" />
-                <line x1="100" y1="550" x2="300" y2="500" />
-                <line x1="600" y1="550" x2="750" y2="500" />
-              </g>
-              
-              <!-- Map Dots - Major Cities -->
-              <g fill="#0056b3" opacity="0.7">
-                <circle cx="100" cy="100" r="5" />
-                <circle cx="300" cy="150" r="4" />
-                <circle cx="500" cy="80" r="6" />
-                <circle cx="700" cy="200" r="5" />
-                <circle cx="900" cy="100" r="4" />
-                
-                <circle cx="150" cy="300" r="5" />
-                <circle cx="400" cy="350" r="7" />
-                <circle cx="550" cy="250" r="6" />
-                <circle cx="650" cy="400" r="5" />
-                <circle cx="850" cy="300" r="4" />
-                
-                <circle cx="200" cy="500" r="5" />
-                <circle cx="350" cy="550" r="4" />
-                <circle cx="500" cy="450" r="6" />
-                <circle cx="700" cy="500" r="5" />
-                <circle cx="800" cy="550" r="4" />
-              </g>
-              
-              <!-- Map Dots - Minor Cities -->
-              <g fill="#ff6b81" opacity="0.5">
-                <circle cx="150" cy="150" r="3" />
-                <circle cx="250" cy="100" r="2" />
-                <circle cx="400" cy="120" r="3" />
-                <circle cx="600" cy="150" r="2" />
-                <circle cx="800" cy="130" r="3" />
-                
-                <circle cx="120" cy="200" r="2" />
-                <circle cx="250" cy="250" r="3" />
-                <circle cx="450" cy="200" r="2" />
-                <circle cx="600" cy="300" r="3" />
-                <circle cx="750" cy="250" r="2" />
-                
-                <circle cx="180" cy="380" r="3" />
-                <circle cx="300" cy="400" r="2" />
-                <circle cx="480" cy="380" r="3" />
-                <circle cx="580" cy="450" r="2" />
-                <circle cx="750" cy="380" r="3" />
-                
-                <circle cx="120" cy="480" r="2" />
-                <circle cx="280" cy="520" r="3" />
-                <circle cx="420" cy="480" r="2" />
-                <circle cx="580" cy="500" r="3" />
-                <circle cx="750" cy="520" r="2" />
-              </g>
-              
-              <!-- Map Dots - Small Towns -->
-              <g fill="#444444" opacity="0.3">
-                <circle cx="120" cy="120" r="1" />
-                <circle cx="220" cy="140" r="1" />
-                <circle cx="320" cy="100" r="1" />
-                <circle cx="420" cy="160" r="1" />
-                <circle cx="520" cy="120" r="1" />
-                <circle cx="620" cy="180" r="1" />
-                <circle cx="720" cy="140" r="1" />
-                <circle cx="820" cy="160" r="1" />
-                <circle cx="920" cy="120" r="1" />
-                
-                <circle cx="130" cy="220" r="1" />
-                <circle cx="230" cy="200" r="1" />
-                <circle cx="330" cy="260" r="1" />
-                <circle cx="430" cy="220" r="1" />
-                <circle cx="530" cy="180" r="1" />
-                <circle cx="630" cy="240" r="1" />
-                <circle cx="730" cy="200" r="1" />
-                <circle cx="830" cy="260" r="1" />
-                <circle cx="930" cy="220" r="1" />
-                
-                <circle cx="140" cy="320" r="1" />
-                <circle cx="240" cy="360" r="1" />
-                <circle cx="340" cy="320" r="1" />
-                <circle cx="440" cy="280" r="1" />
-                <circle cx="540" cy="340" r="1" />
-                <circle cx="640" cy="300" r="1" />
-                <circle cx="740" cy="360" r="1" />
-                <circle cx="840" cy="320" r="1" />
-                <circle cx="940" cy="280" r="1" />
-                
-                <circle cx="150" cy="420" r="1" />
-                <circle cx="250" cy="380" r="1" />
-                <circle cx="350" cy="440" r="1" />
-                <circle cx="450" cy="400" r="1" />
-                <circle cx="550" cy="460" r="1" />
-                <circle cx="650" cy="420" r="1" />
-                <circle cx="750" cy="380" r="1" />
-                <circle cx="850" cy="440" r="1" />
-                <circle cx="950" cy="400" r="1" />
-                
-                <circle cx="160" cy="520" r="1" />
-                <circle cx="260" cy="480" r="1" />
-                <circle cx="360" cy="540" r="1" />
-                <circle cx="460" cy="500" r="1" />
-                <circle cx="560" cy="560" r="1" />
-                <circle cx="660" cy="520" r="1" />
-                <circle cx="760" cy="480" r="1" />
-                <circle cx="860" cy="540" r="1" />
-                <circle cx="960" cy="500" r="1" />
-              </g>
-            </svg>
-            <div class="gradient-overlay"></div>
-        </div>
-        <div class="container">
-            <!-- Heading with decorative elements -->
-            <div class="section-header text-center mb-3">
-                <h2 class="locations-heading">Our Locations</h2>
-                <div class="heading-underline"></div>
-            </div>
-            
-            <!-- Locations grid container -->
-            <div class="locations-container">
-                <!-- Location Card 1 -->
-                <div class="location-card animate-up">
-                    <div class="location-marker">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="location-content">
-                        <h3>Vega 8, Swargate</h3>
-                        <p>Numero Uno Financial Solutions<br>
-                          Office No. 8, 4th Floor, A Wing, Vega Centre,<br>
-                          Shankar Shet Road, Swargate, Pune - 411037
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- Location Card 2 -->
-                <div class="location-card animate-up" data-delay="200">
-                    <div class="location-marker">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="location-content">
-                        <h3>Vega 7, Swargate</h3>
-                        <p>Numero Uno Financial Solutions<br>
-                          Office No. 7, 4th Floor, A Wing, Vega Centre,<br>
-                          Shankar Shet Road, Swargate, Pune - 411037
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- Location Card 3 -->
-                <div class="location-card animate-up" data-delay="400">
-                    <div class="location-marker">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="location-content">
-                        <h3>Andheri, Mumbai</h3>
-                        <p>Numero Uno Financial Solutions<br>
-                          Office No. 307, 3rd Floor, Eco Space,<br>
-                          Mogra Village Lane, Off New Nagardas Road,<br>
-                          Andheri East, Mumbai – 400069
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- Location Card 4 -->
-                <div class="location-card animate-up" data-delay="600">
-                    <div class="location-marker">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="location-content">
-                        <h3>Naupada, Thane</h3>
-                        <p>Numero Uno Financial Solutions<br>
-                          404, Bal Ganesh Tower, Dada Patil Wadi,<br>
-                          Naupada, Station Road, Thane West – 400602
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section content-section">
-        <div class="container">
-            <!-- Section Header -->
-            <div class="section-header text-center mb-5">
-                <h2 class="contact-heading">Contact Us</h2>
-                <div class="heading-underline"></div>
-            </div>
-            
-            <!-- Contact Content -->
-            <div class="row d-flex justify-content-center">
-                <!-- Contact form column -->
-                <div class="col-lg-7 col-md-12 animate-right">
-                    <div class="contact-form-container">
-                        <form id="contactForm" class="contact-form">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <div class="form-group">
-                                        <label for="name">Your Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <!-- Contact form column -->
+                    <div class="col-lg-7 col-md-12 animate-right">
+                        <div class="contact-form-container">
+                            <form id="contactForm" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="name">Your Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="email">Your Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="form-group">
-                                        <label for="email">Your Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="position">Position Interested In</label>
+                                            <input type="text" class="form-control" id="position" placeholder="Enter position (if applying)">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="form-group mb-3">
-                                <label for="subject">Subject</label>
-                                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-                            </div>
-                            
-                            <div class="form-group mb-4">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </form>
+                                
+                                <div class="form-group mb-3">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                                </div>
+                                
+                                <div class="form-group mb-4">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer Section -->
-    <section class="footer">
-        <p>@ NUFS all rights reserved</p>
-    </section>
-    <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./script.js"></script>
-</body>
+        <!-- Footer Section -->
+        <section class="footer">
+            <p>@ NUFS all rights reserved</p>
+        </section>
+
+        <!-- Bootstrap 5 JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
 </html>
