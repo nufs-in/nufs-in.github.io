@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Replace with your Formspree endpoint
             // Format: https://formspree.io/f/{your-form-id}
-            const formspreeEndpoint = 'https://formspree.io/f/xxxyyyzzz'; // Replace with your actual form ID
+            const formspreeEndpoint = 'https://formspree.io/f/mnndnepq'; // Replace with your actual form ID
             
             // Show loading state
             const submitBtn = contactForm.querySelector('.submit-btn');
@@ -324,65 +324,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 messageElement.remove();
             }, 500);
         }, 5000);
-    }
-    // Function to dynamically add images to the slider
-    function initializeImageSlider(imageUrls) {
-        if (!imageUrls || imageUrls.length === 0) return;
-        
-        const sliderTrack = document.querySelector('.slider-track');
-        if (!sliderTrack) return;
-        
-        // Clear existing slides
-        sliderTrack.innerHTML = '';
-        
-        // Create slides for each image (original set)
-        imageUrls.forEach((url, index) => {
-            const slide = document.createElement('div');
-            slide.className = 'slide';
-            
-            const img = document.createElement('img');
-            img.src = url;
-            img.alt = `Partner ${index + 1}`;
-            
-            slide.appendChild(img);
-            sliderTrack.appendChild(slide);
-        });
-        
-        // Duplicate the slides for seamless infinite scrolling
-        imageUrls.forEach((url, index) => {
-            const slide = document.createElement('div');
-            slide.className = 'slide';
-            
-            const img = document.createElement('img');
-            img.src = url;
-            img.alt = `Partner ${index + 1}`;
-            
-            slide.appendChild(img);
-            sliderTrack.appendChild(slide);
-        });
-        
-        // Update animation duration based on number of images
-        const slidesCount = imageUrls.length;
-        const baseSpeed = 5; // seconds for 1 image
-        const animationDuration = baseSpeed * slidesCount;
-        
-        // Update CSS animation
-        sliderTrack.style.animation = `scroll ${animationDuration}s linear infinite`;
-        
-        // Update slide width calculation
-        const slideWidth = 200; // Base slide width
-        sliderTrack.style.width = `${slideWidth * slidesCount * 2}px`; // Double for duplicate set
-        
-        // Update animation keyframes
-        document.styleSheets[0].insertRule(`
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(calc(-${slideWidth}px * ${slidesCount}));
-                }
-            }
-        `, 0);
     }
 });
