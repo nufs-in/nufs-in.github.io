@@ -192,7 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(contactForm);
             
             // Replace with your Formspree endpoint
-            // Format: https://formspree.io/f/{your-form-id}
             const formspreeEndpoint = 'https://formspree.io/f/mnndnepq'; // Replace with your actual form ID
             
             // Show loading state
@@ -324,5 +323,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 messageElement.remove();
             }, 500);
         }, 5000);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                
+                // If it's a stat item, start the count animation
+                if (entry.target.classList.contains('stat-item')) {
+                    const valueDisplay = entry.target.querySelector('.stat-value');
+                    const endValue = parseInt(valueDisplay.getAttribute('data-count'));
+                    animateValue(valueDisplay, 0, endValue, 2000);
+                }
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    // Observe all animated elements
+    document.querySelectorAll('.animate-fade').forEach(item => {
+        observer.observe(item);
+    });
+    
+    // Function to animate the counter
+    function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            obj.innerHTML = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
     }
 });
